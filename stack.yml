@@ -1,0 +1,9 @@
+provider:
+  name: faas
+  gateway: http://127.0.0.1:8080
+
+functions:
+  make-html:
+    lang: node8-express-armhf
+    handler: ./make-html
+    image: alexellis2/make-html
